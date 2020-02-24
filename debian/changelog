@@ -1,0 +1,5 @@
+ncurses (6.2.0-1.syslogng70) syslogng70; urgency=medium
+
+  * initial release
+
+ -- Laszlo Varady <laszlo.varady@balabit.com>  Mon, 24 Feb 2020 18:19:55 +0100

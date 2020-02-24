@@ -1,0 +1,14 @@
+Source: ncurses
+Priority: extra
+Maintainer: syslog-ng developers <syslog-ng@lists.balabit.hu>
+Build-Depends: pkg-config
+Standards-Version: 3.7.2
+Section: libs
+
+Package: libncurses
+Architecture: any
+Description: libncurses
+
+Package: libncurses-dbg
+Architecture: any
+Description: libncurses-dbg

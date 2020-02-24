@@ -1,0 +1,16 @@
+name: ncurses
+builder:
+  name: AutotoolsBuilder
+  configure_options: |
+    PKG_CONFIG=@@installdir@@/lib/pkgconfig
+    --with-shared
+    --without-ada
+    --enable-widec
+    --enable-pc-files
+    --without-cxx
+    --without-tests
+    --without-progs
+    --disable-db-install
+  flags: "no-make-dist out-of-tree-build-incompatible"
+platforms:
+  - linux-glibc2.11/amd64
