@@ -3,7 +3,7 @@ STAMPDIR=tgz2build/stamps
 
 CONFIGURE_OPTS := --prefix $(ZBS_PREFIX) --with-shared --without-ada \
                   --enable-widec --enable-pc-files --without-cxx \
-				  --without-tests --without-progs
+				  --without-tests --without-progs --disable-db-install
 
 all: binary
 
