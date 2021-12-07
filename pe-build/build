@@ -1,0 +1,24 @@
+source="ncurses"
+version=6.2.0-pe-1
+dependencies=(
+)
+
+build() {
+  cd "${build_dir}"
+  ${src_dir}/configure --prefix="${prefix}" \
+                       --with-pkg-config-libdir="${prefix}/lib/pkgconfig/" \
+                       --with-shared \
+                       --without-ada \
+                       --enable-widec \
+                       --enable-pc-files \
+                       --without-cxx \
+                       --without-tests \
+                       --without-progs \
+                       --disable-db-install
+
+  make
+}
+
+install() {
+  make -C "${build_dir}" DESTDIR="${dest_dir}" install
+}
